@@ -1,0 +1,16 @@
+import sqlite3
+con = sqlite3.connect("mydatabase.db")
+cur = con.cursor()
+#cur.execute("""CREATE TABLE IF NOT EXISTS students (name VARCHAR, roll_no VARCHAR, section VARCHAR)""")
+#cur.execute('INSERT INTO students VALUES ("pradeep", "501", "A")')
+#cur.execute('INSERT INTO students VALUES ("srikanth", "502", "B")')
+#cur.execute('INSERT INTO students VALUES ("shekar", "503", "C")')
+
+x = cur.execute('select *from students')
+print(x.fetchall())
+con.commit()
+#cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
+#tables = cur.fetchall()
+#print(tables)
+#con.close()
+print(x)
