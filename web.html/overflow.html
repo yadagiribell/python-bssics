@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--over flow properties 1.visible -shows the all data but the border data is with in the border and overflow data is out of the border
+                                 2.hidden-shows the only data within the border,it does not shows the overflow data but if you copy you will get all data
+                                 3.clip-by using overflow-clip-margin you can clip(you can saw) the extra data by respected measurments
+                                 4.scroll-by using scroll you can scroll and view the entire data 
+                                 5.auto..  -auto means similar to scroll-->
+        <style>
+            #p1{
+                border: 3px solid;
+                height: 20px;
+                overflow: hidden;    
+            }
+            #p2{
+                border: 3px solid;
+                height: 20px;
+                overflow: clip;
+                overflow-clip-margin: 10px;
+                
+            }
+            #p3{
+                border: 3px solid;
+                height: 35px;
+                overflow: scroll;
+            }
+            #p4{
+                border: 3px solid;
+                height: 35px;
+                overflow:auto;
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <p id="p1">i am just wanna be yours secrets i had held in my heart
+            are harder to hide than i thought may be i am just wanna be yours
+            wanna be yours..
+        </p><br>
+        <p id="p2">dance with me me and my friends at the table the top of the class
+            get in a taxi radio common
+            i am in love with the shape of you
+        </p><br>
+        <p id="p3">o asma milla sabi ko meri adhe adhe pure e hamna 
+            teri nam se meri zindagi likdey..kdljfowijapondkjfnkjakfuifjklm,
+        </p><br>
+        <p id="p4">tum na va mere tu he to meri sas chale dkjfikafkfjklajkjiojwkjakjfdjxmjfjhkm xmnjh
+            anjhfjdnfdnfjhjdhkjwni9whjdy8hdjf
+        </p>
+    </body>
+</html>

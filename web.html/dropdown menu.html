@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .dropdown{
+                display: inline-block;
+            }
+            .dropdown button{
+                background-color: blue;
+                color: red;
+                padding: 10px 10px;
+                border: none;
+                cursor: pointer;
+            }
+            .dropdown a{
+                display: block;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: black;
+            }
+            .dropdown .content{
+                display: none;
+                position: absolute;
+                background-color: skyblue;
+                min-width: 100px;
+                box-shadow: 2px 2px 5px black;
+            }
+            .dropdown:hover .content{
+                display: block;
+
+            }
+            .dropdown button:hover{
+                background-color:aqua;
+            }
+            .dropdown a:hover{
+                background-color: wheat;
+            }
+            
+
+        </style>
+
+    </head>
+    <body>
+        <div class="dropdown">
+            <button>FOOD</button>
+            <div class="content">
+                <a href="">OATS</a>
+                <a href="">PEANUT BUTTER</a>
+                <a href="">MILK</a>
+                <a href="">BANANA</a>
+            </div>
+        </div>
+    </body>
+</html>

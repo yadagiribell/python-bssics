@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--psuedo element is defined as the keyword added to the selector
+        that is used to style the specific part of an element 
+        syntax is selector :: pseudo element-->
+        <style>
+            h1::first-letter{
+                font-size: 100px;
+                font-style: italic;
+
+            }
+            p::first-line{
+                background-color: aqua;
+
+            }
+            p::selection{
+                background-color: blue;
+            }
+            #apple::after{
+                content: "    =  5$";
+            }
+            #orange::after{
+                content: "  =  2$";
+            }
+            #banana::after{
+                content: "  =  3$";
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <p>i wanna be yours secrets i had held in my heart are harder to hide than i thought may be 
+            i am just wanna be yours ...wanna be 
+        </p>
+        <ul id="fruit">
+            <li id="apple">apple</li>
+            <li id="orange">orange</li>
+            <li id="banana">banana</li>
+        </ul>
+    </body>
+</html>

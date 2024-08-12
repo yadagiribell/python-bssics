@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--if we write as order 1 then it will display from the beginning of
+        the last while you write order as -1 then it will display from beginning 
+        itself-->
+        <style>
+         
+            .container{
+                display: flex;
+                
+                justify-content: center;
+                column-gap: 10px;
+
+            }
+            .box{
+                
+                width: 100px;
+                height: 100px;
+                font-size: 4em;
+                text-align: center;
+                border-radius: 15px;
+                
+
+
+            }
+            #box1{
+                background-color: red;
+                order: -1;  
+            }
+            #box2{
+                background-color: green;
+            }
+            #box3{
+                background-color: blue;
+            }
+            #box4{
+                background-color: yellow;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">3</div>
+            <div class="box" id="box4">4</div>
+        </div>
+    </body>
+</html>

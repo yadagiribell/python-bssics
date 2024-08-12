@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                border: 3px solid black;
+            }
+            #container + h1{
+                background-color: aqua;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!--combinators will explain the realation between selectors
+        1.  = desecadant   it shows the all child elements present in the class
+        2. > = child  -it shows the child elements but does not show the sub class elements 
+        3. ~ = general siblinng - it shows the siblings which are not presented in the particular class
+        4 + = adjecent sibling - it is the nearest element to the class
+        -->
+        <div id="container">
+            <h1>YADAGIRI</h1>
+            <h1>SACHIN</h1>
+            <div><h1>KARTHIK</h1></div>
+        </div>
+        
+        <h1>sreekanth</h1>
+        <h1>YOGESHWAR</h1>
+    </body>
+</html>

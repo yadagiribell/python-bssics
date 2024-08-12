@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--pagination is defined as the method which a document is seperated into pages
+        and numbers are given ..by that page no we can go through that page-->
+        <style>
+            .pagination {
+                text-align: center;
+            }
+            .pagination a{
+                color: black;
+                text-decoration: none;
+                padding: 8px 15px;
+                display: inline-block;
+                
+            }
+            .pagination a.active{
+                background-color: aqua;
+                font-weight: bold;
+                border-radius: 10px;
+            }
+            .pagination a:hover:not(.active){
+                background-color: gold;
+                border-radius: 10px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>This is page #4</h1>
+        <p>i wanna be yours secrets i had held in my heart are harder to hide than i thought
+            may be i am just wanna be yours...
+        </p>
+        <div class="pagination">
+        <a href="page3.html"><</a>
+        <a href="pagination.html" >1</a>
+        <a href="page2.html" >2</a>
+        <a href="page3.html"  >3</a>
+        <a href="page4.html" class="active">4</a>
+        <a href="page5.html">5</a>
+        <a href="page5.html">></a>
+        </div>
+    </body>
+</html>

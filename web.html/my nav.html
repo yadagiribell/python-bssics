@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY NAV</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .hero{
+                width: 200vh;
+                height: 100vh;
+                background-image: url('lion.jpg');
+                background-repeat: no-repeat;
+               
+                background-position: center;
+                background-size:cover ;
+            }
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 20px;
+                padding-top: 40px;
+                padding-right: 30px;
+            }
+            .me h2{
+                color: white;
+                font-size: 28px;
+                margin-top: 40px;
+            }
+            span{
+                color: red;
+            }
+            
+            
+            nav ul li{
+                list-style-type: none;
+                display: inline-block;
+                padding: 30px;
+
+            }
+            nav ul li a{
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+
+            }
+            ul li a:hover{
+                cursor: pointer;
+                color: red;
+            }
+            button{
+                border: none;
+                background-color: red;
+                color: white;
+                padding: 12px 30px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 15px;
+                box-shadow: 2px 2px 5px blue,-2px -2px 5px blue;
+
+            }
+            button:hover{
+                transform: scale(1.3);
+                cursor: pointer;
+            }
+            p{
+                color: white;
+                margin-top: 40px;
+                font-size: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <div class="me">
+                
+                <h2>YADAGIRI<span> BELLE</span></h2>
+                <p>Hii I am Frontend Developer..</p>
+                </div>
+                
+                    
+            
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Certificates</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button type="submit">Subscribe</button>
+            </nav>
+        </div>
+    </body>
+
+</html>
